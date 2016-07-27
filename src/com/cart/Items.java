@@ -10,7 +10,7 @@ public class Items {
 	
 	/* The item name e.g Apples,Oranges etc.*/
 	private String itemName;
-	/* The item price e.g 10.*/
+	/* The item price e.g 10.(To make it simple,have used int) */
 	private int Price;
 	/* The item quantity  e.g 3. */
 	private int quantity;

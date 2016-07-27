@@ -21,11 +21,13 @@ public class ShoppingCart {
 	 */
 	public int getTotalItemCost(List<Items> itemList) {
 
-		Iterator<Items> itr = itemList.iterator();
-		while (itr.hasNext()) {
-			Items item = itr.next();
-			System.out.println(item);
-			totalCost = totalCost + (item.getPrice() * item.getQuantity());
+		if (itemList != null) {
+			Iterator<Items> itr = itemList.iterator();
+			while (itr.hasNext()) {
+				Items item = itr.next();
+				System.out.println(item);
+				totalCost = totalCost + (item.getPrice() * item.getQuantity());
+			}
 		}
 		System.out.println("The total cost is :" + totalCost);
 		return totalCost;
